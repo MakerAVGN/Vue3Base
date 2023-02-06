@@ -2,12 +2,16 @@
 export default {
   data() {
     return {
-      text:'Cute kitty video',
-      href: 'https://www.youtube.com/watch?v=xosMyvzRoPM'
+      num0:5,
+      num1:1,
+      num2:2,
+      nim3:3,
     }
   }
 }
 </script>
 <template>
-<a :href=href>{{ text }}</a>
+<p>Квадрат свойства num0: {{ num0 * num0 }} </p> <br>
+<p>Сумма свойства num1-3: {{ num1 + num2 + num3 }}</p>
+
 </template>
