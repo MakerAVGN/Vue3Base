@@ -2,17 +2,12 @@
 export default {
   data() {
     return {
-      firstname: 'Eren',
-      secondname: 'Eger',
+      text:'Cute kitty video',
+      href: 'https://www.youtube.com/watch?v=xosMyvzRoPM'
     }
   }
 }
 </script>
 <template>
-<h1>
-  {{ firstname }}
-</h1>
-<h2>
-{{ secondname }}
-</h2>
+<a :href=href>{{ text }}</a>
 </template>
