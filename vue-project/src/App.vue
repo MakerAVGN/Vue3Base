@@ -2,16 +2,18 @@
 export default {
   data() {
     return {
-      text: 'like',
+      cost: 5,
+      amount: 10,
     }
   },
-  methods: {
-    change: function () {
-      this.text = 'hate';
+  computed: {
+    summ: function () {
+      return this.amount * this.cost;
     },
-    change1: function () {
-      this.text = 'eat';
+    izm: function () {
+      this.cost = this.cost + 3;
     }
+ 
   }
   
 }
@@ -20,7 +22,8 @@ export default {
 </script>
 <template>
 <h1>№1</h1> <br>
-<p>I {{ text }} pumpkin</p>
-<button @click="change" >switch</button>
-<button @click="change1">switch2</button>
+  <p>{{ cost }}</p>
+  <p>{{ amount }}</p>
+  <p>{{ summ}}</p>
+  <button @click="izm" >+3 cost</button>
 </template>
