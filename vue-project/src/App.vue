@@ -2,22 +2,15 @@
 export default {
   data() {
     return {
-      text: 'str',
-      num1: 1,
-      num2: 2,
+      text: 'like',
     }
   },
   methods: {
-    summ: function () {
-      const number = this.$refs.inputmult.value;
-      alert(number * number);
+    change: function () {
+      this.text = 'hate';
     },
-
-    mult_two: function() {
-      alert(2 * 2);
-    },
-    mult_three: function () {
-      alert(3 * 3);
+    change1: function () {
+      this.text = 'eat';
     }
   }
   
@@ -27,12 +20,7 @@ export default {
 </script>
 <template>
 <h1>№1</h1> <br>
-<input type="number" ref="inputmult"><br>
-<button @click="summ">Click</button>
-<br>
-<br>
-
-
-<button @click="mult_two">Square number 2</button> <br>
-<button @click="mult_three">Square number 3</button>
+<p>I {{ text }} pumpkin</p>
+<button @click="change" >switch</button>
+<button @click="change1">switch2</button>
 </template>
