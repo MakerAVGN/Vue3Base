@@ -3,16 +3,22 @@ export default {
   data() {
     return {
       visible: true,
-      not_visible: false,
     }
   },
   methods: {
-    
+    hide: function() {
+      this.visible = false;
+    },
+    show: function () {
+      this.visible = true;
+    },
     
   }
 }
 </script>
 <template>
-  <p v-if="!visible" > Видишь меня?  АУ</p>
-  <p v-if="!not_visible" > МЕНЯ ЗАМЕТИЛИ </p>
+<button v-if="visible" @click="hide">Hide text</button>
+<p v-if="visible"> HELLO! </p>
+<button v-if="!visible" @click="show">Show text</button>
+
 </template>
