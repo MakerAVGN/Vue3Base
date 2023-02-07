@@ -13,6 +13,6 @@ export default {
 }
 </script>
 <template>
-  <p v-if="visible" > Видишь меня? </p>
-  <p v-if="not_visible" > А меня нет))) </p>
+  <p v-if="!visible" > Видишь меня?  АУ</p>
+  <p v-if="!not_visible" > МЕНЯ ЗАМЕТИЛИ </p>
 </template>
