@@ -2,28 +2,18 @@
 export default {
   data() {
     return {
-      cost: 5,
-      amount: 10,
+      text:'Модификаторы событий в фреймворке Vue',
+      url: 'https://v3.ru.vuejs.org/ru/guide/events.html#модификаторы-событии'
     }
   },
-  computed: {
-    summ: function () {
-      return this.amount * this.cost;
-    },
-    izm: function () {
-      this.cost = this.cost + 3;
+  methods: {
+    warning: function(){
+      alert('JUST ONE TIME!');
     }
- 
   }
-  
 }
-
-
 </script>
 <template>
-<h1>№1</h1> <br>
-  <p>{{ cost }}</p>
-  <p>{{ amount }}</p>
-  <p>{{ summ}}</p>
-  <button @click="izm" >+3 cost</button>
+  <a @click.prevent :href=url>{{ text }}</a> <br>
+  <button @click.once="warning"> Just one time </button>
 </template>
