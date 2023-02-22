@@ -29,16 +29,8 @@ export default {
 }
 </script>
 <template>
- <button class="a" @click="add" >Task1</button>
-  <button class="a"  @click="delFirst" >Task2</button>
-  <button class="a"  @click="delLast" >Task3</button>
-  <button class="a"  @click="delSecondLast" >Task4</button>
-  <button class="a"  @click="sortarr" >Task5</button>
-  <button class="a"  @click="reverseMassive" >Task6</button>
-
-  <ul class="b"  v-for="elem in arr">
-      <li>{{ elem }}</li>
-    </ul><br>
+<p class="a">Я уже стилизирован</p>
+<p class="b"> А я тем более</p>
 </template>
 
 
