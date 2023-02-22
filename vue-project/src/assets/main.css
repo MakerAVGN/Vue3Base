@@ -44,6 +44,7 @@ div {
 
 .a {
   border: 3px solid #e07a5f;
+  flex-direction: column;
   margin: 5px;
   padding: 10px;
   align-items: center;
@@ -53,8 +54,8 @@ div {
 .b {
   border: 3px solid #f4f1de;
   flex-direction: column;
-  text-align: center;
   margin: 5px;
   padding: 10px;
+  align-items: center;
   color: #f4f1de;
 }
