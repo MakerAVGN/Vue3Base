@@ -32,3 +32,29 @@ a,
     grid-template-columns: 1fr 1fr;
   }
 }
+
+* {
+  background-color: #3d405b;
+}
+
+div {
+  display: flex;
+  font-size: 1.2rem;
+}
+
+.a {
+  border: 3px solid #e07a5f;
+  margin: 5px;
+  padding: 10px;
+  align-items: center;
+  color: #e07a5f;
+}
+
+.b {
+  border: 3px solid #f4f1de;
+  flex-direction: column;
+  text-align: center;
+  margin: 5px;
+  padding: 10px;
+  color: #f4f1de;
+}
