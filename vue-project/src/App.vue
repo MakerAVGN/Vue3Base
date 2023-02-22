@@ -6,19 +6,14 @@ export default {
     }
   },
   methods: {
-    hide: function() {
-      this.visible = false;
-    },
-    show: function () {
-      this.visible = true;
-    },
+    toggle: function () {
+      this.visible = !this.visible;
+    }
     
   }
 }
 </script>
 <template>
-<button v-if="visible" @click="hide">Hide text</button>
-<p v-if="visible"> HELLO! </p>
-<button v-if="!visible" @click="show">Show text</button>
-
+  <button @click="toggle">toggle</button>
+  <p v-if="visible">text</p>
 </template>
