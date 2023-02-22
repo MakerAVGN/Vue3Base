@@ -2,7 +2,7 @@
 export default {
   data() {
     return {
-          isAuth: true,         
+          day: 3,      
     }
   },
   methods: {
@@ -20,6 +20,12 @@ export default {
 }
 </script>
 <template>
-  <p v-if="isAuth">+++</p>
-  <p v-else>---</p>
+  <p >Today: </p>
+  <p v-if="day == 1">Monday</p>
+  <p v-if="day == 2">Tuesday</p>
+  <p v-if="day == 3">Wednesday</p>
+  <p v-if="day == 4">Thursday</p>
+  <p v-if="day == 5">Friday</p>
+  <p v-if="day == 6">Saturday</p>
+  <p v-if="day == 7">Sunday</p>
 </template>
