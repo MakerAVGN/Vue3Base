@@ -2,7 +2,7 @@
 export default {
   data() {
     return {
-      num: 0,
+      items: [1, -2, 3, -4, 5],
     }
   },
   methods: {
@@ -10,9 +10,13 @@ export default {
 }
 </script>
 <template>
-  <p v-for="num in 30" style="padding: 5px;">
-    {{ num }}
-  </p>
+	<ul>
+		<template v-for="elem in items">
+			<li v-if="elem > 0">
+				{{ elem }}
+			</li>
+		</template>
+	</ul>
 </template>
 
 
