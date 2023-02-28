@@ -2,17 +2,16 @@
 export default {
   data() {
     return {
-      cssClasses: "color: red",
+      obj: {
+        done: true,
+        selected: false,
+      },
     }
-  },
-  methods: {
-    
   }
-
 }
 </script>
 <template>
-  <p :style="cssClasses">text</p>
+  <p :class="obj">text</p>
 </template>
 
 
