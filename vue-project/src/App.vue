@@ -12,18 +12,16 @@ export default {
 }
 </script>
 <template>
-  <p :class="{ active: isActive, error: hasError }">
+  <p :style="{ color: 'green', 'background-color': 'yellow' }">
     text
+  </p>
+  <p :style="{'font-weight': 800, 'font-style': 'italic'}">
+    text 2
   </p>
 </template>
 
 <style>
-.active {
-  border: 10px solid black;
-}
-.error   {
-  color: red;
-}
+
 </style>
 
 
