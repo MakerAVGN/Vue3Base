@@ -1,9 +1,9 @@
 <script>
 export default {
- data() {
+  data() {
     return {
-      isActive: true,
-      hasError: true,
+      task: "Task",
+      number: 3,
     }
   },
   methods: {
@@ -12,12 +12,11 @@ export default {
 }
 </script>
 <template>
-  <p :style="{ color: 'green', 'background-color': 'yellow' }">
-    text
-  </p>
-  <p :style="{'font-weight': 800, 'font-style': 'italic'}">
-    text 2
-  </p>
+ <input type="text" v-model="task" /><br>
+  <p>{{ task }}</p><br>
+  <p>{{ task.toUpperCase() }}</p><br>
+  <input type="number" v-model="number" /><br>
+  <p>{{ number ** 2 }}</p><br>
 </template>
 
 <style>
