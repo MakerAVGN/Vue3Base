@@ -1,17 +1,25 @@
 <script>
 export default {
-  data() {
+ data() {
     return {
-      checked: true,
-    };
+      arr: [],
+    }
   },
   methods: {},
 };
 </script>
 <template>
-  <input type="checkbox" v-model="checked" />
-  &nbsp;
-  <p v-if="checked">{{ checked }}</p>
+  <input type="checkbox" v-model="arr" value="english"><br>
+  <p>English</p><br>
+  <input type="checkbox" v-model="arr" value="russian"><br>
+   <p>Russian</p><br>
+  <input type="checkbox" v-model="arr" value="japan"><br>
+   <p>Japan</p><br>
+  <ul v-for="elem in arr"> 
+    <li>
+      {{ elem }}
+    </li>
+  </ul>
 </template>
 <style>
 
