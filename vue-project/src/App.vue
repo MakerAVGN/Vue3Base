@@ -1,7 +1,9 @@
 <script>
 export default {
-  data() {
+ data() {
     return {
+      isActive: true,
+      hasError: true,
     }
   },
   methods: {
@@ -10,13 +12,18 @@ export default {
 }
 </script>
 <template>
-  <p :class="{ active: true, valid: false }">
+  <p :class="{ active: isActive, error: hasError }">
     text
   </p>
 </template>
 
 <style>
-
+.active {
+  border: 10px solid black;
+}
+.error   {
+  color: red;
+}
 </style>
 
 
