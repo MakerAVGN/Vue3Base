@@ -2,25 +2,22 @@
 export default {
  data() {
     return {
-      arr: [],
+      choice: '',
     }
   },
   methods: {},
 };
 </script>
 <template>
-  <input type="checkbox" v-model="arr" value="english"><br>
+  <input name="radio" type="radio" v-model="choice" value="Russian">
+  <br>
+  <p>Russian</p><br>
+  <input name="radio" type="radio" v-model="choice" value="English"><br>
   <p>English</p><br>
-  <input type="checkbox" v-model="arr" value="russian"><br>
-   <p>Russian</p><br>
-  <input type="checkbox" v-model="arr" value="japan"><br>
-   <p>Japan</p><br>
-  <ul v-for="elem in arr"> 
-    <li>
-      {{ elem }}
-    </li>
-  </ul>
-</template>
+  <input name="radio" type="radio" v-model="choice" value="Tatar"><br>
+  <p>Tatar</p><br>
+  <p>{{ choice }}</p>
+</template> 
 <style>
 
 </style>
