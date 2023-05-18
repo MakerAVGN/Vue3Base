@@ -2,21 +2,25 @@
 export default {
  data() {
     return {
-      choice: '',
+      selected: 'Симферополь', // значение по умолчанию
     }
   },
   methods: {},
 };
 </script>
 <template>
-  <input name="radio" type="radio" v-model="choice" value="Russian">
-  <br>
-  <p>Russian</p><br>
-  <input name="radio" type="radio" v-model="choice" value="English"><br>
-  <p>English</p><br>
-  <input name="radio" type="radio" v-model="choice" value="Tatar"><br>
-  <p>Tatar</p><br>
-  <p>{{ choice }}</p>
+  <p>В каком городе вы живете?</p>
+ 	<select v-model="selected">
+  		<option>Симферополь</option>
+  		<option>Севастополь</option>
+  		<option>Керчь</option>
+  	</select>
+	
+  	<p>{{ selected }}</p>
+
+
+
+
 </template> 
 <style>
 
