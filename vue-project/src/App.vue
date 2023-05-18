@@ -7,9 +7,9 @@ export default {
     }
   },
   methods: {
-   addItem() {
-    this.items.unshift(this.newItem);
-   }
+   removeItem: function (index) {
+      this.items.splice(index, 1);
+    }
   },
 };
 </script>
@@ -18,7 +18,9 @@ export default {
   <ul>
   		<li v-for="(item, index) in items" :key="index">
   			{{ item }} 
+        <button @click="removeItem(index)">remove</button>
   		</li>
+      
   	</ul>
 
   <input v-model="newItem">
