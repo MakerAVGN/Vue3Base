@@ -2,48 +2,27 @@
 export default {
   data() {
     return {
-      inputText: "",
-      displayedText: "",
-      task_2: false,
-      task_3: '',
-      outputText: ''
+      newItem: '',
+      items: ['a', 'b', 'c', 'd', 'e'],
     }
   },
   methods: {
-    displayText() {
-      this.displayedText = this.inputText;
-    },
-    text1() {
-      this.task_2 = true;
-    },
-    left() {
-      this.outputText = 'left'
-    },
-    right() {
-      this.outputText = 'right'
-    },
-    middle() {
-      this.outputText = 'middle'
-    }
+   addItem() {
+    this.items.unshift(this.newItem);
+   }
   },
 };
 </script>
 <template>
 
+  <ul>
+  		<li v-for="(item, index) in items" :key="index">
+  			{{ item }} 
+  		</li>
+  	</ul>
 
- <div >
-      <input type="text" v-model="inputText" @keydown.enter="displayText" />
-      <p>{{ displayedText }}</p>
-    </div>
-
-
-    <a href="/" @click.ctrl="text1">Ссылка</a>
-    <p v-if="task_2">asdasds</p>
-
-
-    <a href="/" @click.left.prevent="left" @click.right.prevent="right"  @click.middle.prevent="middle">Ссылка 2</a>
-     <p>{{ outputText }}</p>
-
+  <input v-model="newItem">
+  	<button @click="addItem">add</button>
 
 
 
