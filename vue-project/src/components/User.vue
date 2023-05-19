@@ -1,34 +1,18 @@
 <script>
 export default {
-    emits: ['show','aboba'],
-    props: {
-        name: String,
-        surn: String,
-
-    },
+    emits: ['show'],
     data() {
         return {
-
         }
     },
     methods: {
         handle() {
-            this.$emit('show');
-        },
-        aboba() {
-            this.$emit('aboba')
+            const a = this.$emit('kokiev', 'muhammed', '123');
+            console.log(a);
         }
     }
 }
 </script>
 <template>
-
-
-        
-    <button @click="handle">btn</button>
-    <button @click="aboba">aboba</button>
-  
-
-    	
-
+    
 </template>
