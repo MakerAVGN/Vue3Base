@@ -14,5 +14,7 @@ export default {
 }
 </script>
 <template>
-    
+      <button @click="$emit('show', 'xxx', 'yyy')">
+    		btn
+    	</button>
 </template>

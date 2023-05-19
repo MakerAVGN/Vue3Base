@@ -19,10 +19,9 @@ export default {
 </script>
 <template>
 
- <div>
-        <button @click="handle">Нажми меня</button>
-        <User @show="func"/>
-      </div>
+ 
+         <User @show="func"/>
+
 
 
 
