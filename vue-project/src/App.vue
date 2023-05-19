@@ -23,9 +23,13 @@ export default {
 };
 </script>
 <template>
-  
-  <User name="john" surn="smit" />
-  <Employee name="muslim" surn="kiyik" age="18"/>
+
+
+  <User :arg="[1, 2, 3]" />
+ <User :arg="{ a: 1, b: 2, c: 3 }" />
+ 	<User :arg="true" />
+
+  <User />
 
 
 
