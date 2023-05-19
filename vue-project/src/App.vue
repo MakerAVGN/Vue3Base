@@ -24,7 +24,8 @@ export default {
 </script>
 <template>
   
-  <User /> <Employee />
+  <User name="john" surn="smit" />
+  <Employee name="muslim" surn="kiyik" age="18"/>
 
 
 
