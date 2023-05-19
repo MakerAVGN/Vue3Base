@@ -7,12 +7,12 @@ export default {
     },
     methods: {
         handle() {
-            const a = this.$emit('kokiev', 'muhammed', '123');
-            console.log(a);
+            this.$emit('show','muhammed', 123);
+            
         }
     }
 }
 </script>
 <template>
-    
+    <button @click="handle">btn</button>
 </template>

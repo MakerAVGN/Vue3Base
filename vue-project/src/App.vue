@@ -8,21 +8,18 @@ export default {
     Employee
   },
   methods: {
-    func(arg1, arg2) {
-      console.log(arg1, arg2);
-    },
-    handle() {
-      this.$emit('show', 'xxx', 'yyy');
-    },
+    func(name, salary) {
+      console.log(name, salary);
+    }
   },
 };
 </script>
 <template>
 
- <div>
-        <button @click="handle">Нажми меня</button>
+
+        
         <User @show="func"/>
-      </div>
+ 
 
 
 
