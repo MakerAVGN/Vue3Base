@@ -1,8 +1,13 @@
 <script>
 export default {
-    props: ['name', 'surn', 'age'],
+    props: {
+        name: String,
+        surn: String,
+        age: Number
+    },
     data() {
         return {
+
         }
     }
 }
