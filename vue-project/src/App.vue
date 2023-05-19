@@ -29,25 +29,19 @@ export default {
     }
   },
  methods: {
-    edit(user) {
-      user.isEdit = true;
+    func() {
+      alert('я первая кнопка');
     },
-    save(user) {
-      user.isEdit = false;
+    aboba(){
+      alert('я вторая кнопка')
     }
   },
 };
 </script>
 <template>
 
-  <User
-  		v-for="user in users"
-  		:name="user.name"
-  		:surn="user.surn"
-  		:key="user.id"
-  	/>
+ <User @show="func" @aboba="aboba" />
 
-  <User />
 
 
 
