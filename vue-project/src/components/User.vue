@@ -10,9 +10,9 @@ export default {
 </script>
 <template>
 <ul>
-    <li>
+
         {{ arg }}
-    </li>
+
 </ul>
     	
 
