@@ -9,7 +9,9 @@ export default {
   },
   data() {
     return {
-      
+      name: 'john',
+      surn: 'smit',
+      age: '15'
     }
   },
  methods: {
@@ -24,12 +26,13 @@ export default {
 </script>
 <template>
 
+    <User :arg="[1, 2, 3]" />
+   <User :arg="{ a: 1, b: 2, c: 3 }" />
+   	<User :arg="true" />
 
-  <User :arg="[1, 2, 3]" />
- <User :arg="{ a: 1, b: 2, c: 3 }" />
- 	<User :arg="true" />
+    <User />
 
-  <User />
+
 
 
 

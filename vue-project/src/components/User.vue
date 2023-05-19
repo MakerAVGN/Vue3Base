@@ -9,6 +9,11 @@ export default {
 }
 </script>
 <template>
-    	{{ arg }}
+<ul>
+    <li>
+        {{ arg }}
+    </li>
+</ul>
+    	
 
 </template>
