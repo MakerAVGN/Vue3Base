@@ -2,7 +2,8 @@
 export default {
     props: {
         name: String,
-        surn: String
+        surn: String,
+
     },
     data() {
         return {
@@ -14,8 +15,10 @@ export default {
 <template>
 <ul>
 
-        {{ arg }}
-
+        
+    {{ name }}
+    {{ surn }}
+  
 </ul>
     	
 

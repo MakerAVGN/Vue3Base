@@ -9,9 +9,23 @@ export default {
   },
   data() {
     return {
-      name: 'john',
-      surn: 'smit',
-      age: '15'
+      users: [
+        {
+          id: 1,
+          name: 'name1',
+          surn: 'surn1'
+        },
+        {
+          id: 2,
+          name: 'name2',
+          surn: 'surn2'
+        },
+        {
+          id: 3,
+          name: 'name3',
+          surn: 'surn3'
+        },
+      ],
     }
   },
  methods: {
@@ -26,9 +40,14 @@ export default {
 </script>
 <template>
 
-<Employee :name="name" :surn="surn" :age="age" />
+  <User
+  		v-for="user in users"
+  		:name="user.name"
+  		:surn="user.surn"
+  		:key="user.id"
+  	/>
 
-  <Employee />
+  <User />
 
 
 
